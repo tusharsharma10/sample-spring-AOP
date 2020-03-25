@@ -31,4 +31,9 @@ public class AccountDAO {
 	public void saveAccount() {
 		System.out.println("Doing my db work saving an account");
 	}
+	
+	public void findAccount() {
+		System.out.println("Doing my db work finding an account");
+	}
+	
 }
