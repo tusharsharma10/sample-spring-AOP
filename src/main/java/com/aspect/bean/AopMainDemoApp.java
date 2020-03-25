@@ -15,8 +15,10 @@ public class AopMainDemoApp {
 		AccountDAO ob = context.getBean("accountDAO", AccountDAO.class);
 		MembershipDao mem = context.getBean("membershipDao",MembershipDao.class);
 		// call the business method
+		ob.setAge(23);
+		ob.getAge();
 		ob.addAccount();
-		mem.addAccount();
+		
 		// close the context
 		context.close();
 
