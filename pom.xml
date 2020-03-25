@@ -1,0 +1,71 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>spring.mvc.hib</groupId>
+  <artifactId>spring-crm</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+<dependencies>
+
+
+<!-- Hibernate Jars -->
+<dependency>
+  <groupId>org.hibernate</groupId>
+  <artifactId>hibernate-agroal</artifactId>
+  <version>5.4.11.Final</version>
+  <type>pom</type>
+</dependency>
+
+
+
+
+<!-- mysql-connector-java -->
+<dependency>
+    <groupId>mysql</groupId>
+    <artifactId>mysql-connector-java</artifactId>
+    <version>8.0.19</version>
+</dependency>
+
+
+<!-- Spring MVC  jars -->
+<dependency>
+	<groupId>javax</groupId>
+	<artifactId>javaee-web-api</artifactId>
+	<version>6.0</version>
+	<scope>provided</scope>
+</dependency>
+
+
+<!-- log4j jar -->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.17</version>
+	</dependency>
+	
+	
+	
+	<!-- jstl/jstl -->
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	
+	
+	<!-- javax.servlet/jstl -->
+	<dependency>
+		<groupId>javax.servlet</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+
+
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-webmvc</artifactId>
+		<version>4.2.2.RELEASE</version>
+	</dependency>
+
+</dependencies>
+</project>
