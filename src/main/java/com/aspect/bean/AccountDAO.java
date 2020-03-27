@@ -49,7 +49,11 @@ public class AccountDAO {
 		System.out.println("Doing my db work finding an account");
 	}
 	
-	public List<Account> findAccountList() {
+	public List<Account> findAccountList(boolean flag) {
+		
+		if(flag)
+			throw new RuntimeException();
+		
 		System.out.println("Doing my db work findingaccount list");
 		return accountList;
 	}

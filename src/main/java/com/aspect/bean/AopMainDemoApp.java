@@ -28,7 +28,20 @@ public class AopMainDemoApp {
 		accList.add(new Account("Rahi", 27, 500912.00));
 		
 		ob.setAccountList(accList);
-		ob.findAccountList();
+		List<Account> newAccList = null;
+		
+		try{
+			boolean flag = true;
+			 newAccList = ob.findAccountList(flag);
+		}
+		catch(Exception e){
+			System.out.println("Inside aopmain demo class: "+e);
+		}
+		
+		for(Account a:newAccList){
+			
+			System.out.println(a.getName()+" "+a.getAge()+" "+a.getBalance());
+		}
 		
 		// close the context
 		context.close();
