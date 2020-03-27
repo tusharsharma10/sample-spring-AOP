@@ -19,6 +19,21 @@ public class LogToCloudAspect {
 		MethodSignature methodSignature = (MethodSignature) jp.getSignature();
 		System.out.println("Method Signature: "+methodSignature);
 		System.out.println("Logging to cloud");
+	
+		Object[] tempArgs = jp.getArgs();
+		
+		for(Object t:tempArgs){
+			
+			System.out.println("JoinPoint arguments of method:"+t);
+			
+			if(t instanceof AccountDAO){
+				
+				AccountDAO d = (AccountDAO) t;
+				System.out.println("Account name: "+d.getName());
+				System.out.println("Account name: "+d.getAge());
+			}
+		}
+	
 	}
 	
 }
